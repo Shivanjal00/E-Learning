@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:background="@drawable/header_common"
+            android:paddingHorizontal="@dimen/dp_20">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_13"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_btn_back" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imgBack"
+                android:layout_alignBottom="@id/imgBack"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/faqs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFaqs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingHorizontal="@dimen/dp_20"
+            android:visibility="gone"
+            tools:listitem="@layout/row_faqs" />
+        <!-- android:paddingHorizontal="@dimen/dp_20"-->
+
+    </LinearLayout>
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+        android:id="@+id/txtNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_faq_found"
+        android:textColor="@color/green_100"
+        android:visibility="gone" />
+</RelativeLayout>

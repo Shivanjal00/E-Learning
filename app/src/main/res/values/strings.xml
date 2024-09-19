@@ -1,0 +1,292 @@
+<resources>
+    <string name="app_name">TenSquare</string>
+
+    <string name="ayp_null_time" translatable="false">0:00</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="text_intro1">Better way to learning\nis calling you!</string>
+    <string name="text_intro3">You learn</string>
+    <string name="desc_intro1">Impeet viverra vivamus porttior ules ac vulte lectus velit sen lectus ue </string>
+    <string name="desc_intro2">Impeet viverra vivamus porttior ules ac vulte lectus velit sen lectus ue </string>
+    <string name="desc_intro3">While sitting\nat Home</string>
+
+    <string name="invaild_coupon_code">Incorrect Coupon Code</string>
+    <string name="key_continue_coupon">Either Enter Correct Coupon Code or Proceed Without Coupon Code</string>
+
+    <string name="select_class">Select Class</string>
+    <string name="tenth">10th</string>
+    <string name="eleven">11th</string>
+    <string name="twelfth">12th</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="hindi">Hindi</string>
+    <string name="english">English</string>
+
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_downloads">My Downloads</string>
+    <string name="self_analysis">Self Analysis</string>
+    <string name="analysis_two">Analysis</string>
+    <string name="notification">Notification</string>
+
+    <string name="faqs">FAQ\'s</string>
+    <string name="enrolment_plans">Enrolment Plans</string>
+    <string name="my_txn">My Transactions</string>
+    <string name="txn">Transactions</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="logout">Logout</string>
+
+    <string name="message">Message</string>
+    <string name="write_something">Write something here...</string>
+    <string name="submit">Submit</string>
+
+    <string name="subjects">Subjects</string>
+    <string name="new_updates">Supplements</string>
+    <string name="latest_updates">Latest Updates</string>
+    <string name="previous_year_paper">Previous Year Papers</string>
+    <string name="model_papers">Model Papers</string>
+    <string name="lorem_ipsum_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="lorem_ipsum_short">Lorem ipsum doloramet, consectetur adipiscing elit.</string>
+
+    <string name="open">Open</string>
+    <!--    <string name="notes_resources">Notes/Resources</string>-->
+    <string name="notes_resources">Notes</string>
+
+    <string name="thank_for_registration">Thank you for registration</string>
+    <string name="password_is_reset">Your account password has\nbeen reset</string>
+    <string name="enrolment_completion">Your Enrollment has\ncompleted successfully</string>
+    <string name="sent_sms_to">We have sent an SMS with a 4-digit-code\nto </string>
+
+
+    <string name="enter_mobile_no">Enter Mobile No</string>
+    <string name="enter_10_digit_mobile_no">Mobile no should have 10 digits</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_least_6_char_password">Password must be at least 6 characters.</string>
+
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="language">Language</string>
+    <string name="class_name">Class</string>
+    <string name="email">Email</string>
+    <string name="school">School Name</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="enrolment_plan">Enrolment Plan</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_optional">Email (Optional)</string>
+    <string name="school_optional">School Name (Optional)</string>
+    <string name="state_optional">State (Optional)</string>
+    <string name="district_optional">District (Optional)</string>
+    <string name="save_changes">Save Changes</string>
+
+    <string name="chapters">Chapters</string>
+    <string name="revision_video_n">Revision Video</string>
+    <!--    <string name="practice_session_n">Practice\nSession</string>-->
+    <string name="practice_session_n">Practice</string>
+    <!--    <string name="test_n">Test\n</string>-->
+    <string name="test_n">Test</string>
+    <!--    <string name="notes_resources_n">Notes/\nResources</string>-->
+    <string name="notes_resources_n">Notes</string>
+
+    <!--    <string name="practice_session">Practice Session</string>-->
+    <string name="practice_session">Practice</string>
+    <string name="test">Test</string>
+    <string name="with_solutions">with Solutions</string>
+    <string name="solutions">Solutions</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit_test">Submit Test?</string>
+    <string name="resume">Resume</string>
+    <string name="exit">Exit</string>
+    <string name="sure_wanna_exit">Are you sure you want to Exit?</string>
+    <!--    <string name="end_practice_session">End Practice Session</string>-->
+    <string name="end_practice_session">End Practice?</string>
+    <!--    <string name="end_practice_session_sen">End Practice Session?</string>-->
+    <string name="end_practice_session_sen">End Practice?</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="other_chapters">Other Revision Videos</string>
+    <string name="select_all">Select All</string>
+    <string name="instructions">Instructions</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="end_sen">End</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="next_uderline"><u>Next</u></string>
+    <string name="check">Check</string>
+    <string name="result">Result</string>
+    <string name="correct">Correct</string>
+    <string name="unanswered">Unanswered</string>
+    <string name="analysis">Analysis</string>
+    <string name="percentage">Percentage</string>
+    <string name="total_time">Total Time</string>
+    <string name="avg_time_per_question">Average Time Per Question</string>
+    <string name="topic_for_improvement">Topic for improvement</string>
+    <string name="view_solutions">View Solutions</string>
+
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="downloads">Downloads</string>
+    <string name="avg_score_n">Average\nScore</string>
+    <string name="total_test_attempted_n">Total Tests\nAttempted</string>
+    <string name="time_spend_on_tests_n">Time Spend\nOn Tests</string>
+    <string name="avg_time_per_question_n">Average Time\nPer Question</string>
+    <string name="time_spend_on_practice_n">Time Spend\nOn Practice</string>
+    <string name="detailed_analysis">Detailed Analysis</string>
+
+    <string name="offer_name">Early Bird Offer</string>
+
+    <string name="choose_a_plan">Choose a plan</string>
+    <string name="choose_your_plan">Choose your plan</string>
+    <string name="choose_plan">Choose Plan</string>
+    <string name="launch_offer">Launch Offer</string>
+    <string name="continue_s">Continue</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="apply">Apply</string>
+    <string name="price_details">Price Details</string>
+    <string name="total_amt">Total Amount</string>
+    <string name="amt">Amount</string>
+
+    <string name="guest">Guest</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="is_new_user">New User?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="Skip">Skip</string>
+    <string name="Skip_underline"><u>Skip</u></string>
+    <string name="otp">OTP</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="did_not_received">Didn’t receive the code?</string>
+    <string name="resend">Resend!</string>
+    <string name="proceed">Proceed</string>
+    <string name="proceed_two">Proceed</string>
+
+    <string name="create_new_acc">Create new Account</string>
+    <string name="lets_start">Let\'s get started</string>
+    <string name="i_agree_with">I agree with</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="have_an_acc">Already have an account?</string>
+    <string name="sign_in_q">Sign In!</string>
+
+    <string name="select_user">Select User</string>
+    <string name="existing_user">Existing user</string>
+    <string name="new_user">New user</string>
+    <string name="want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="grade">Grade</string>
+    <string name="active">Active:</string>
+    <string name="valid_till">Valid Till :</string>
+    <string name="valid_till_sen">Valid Till</string>
+    <string name="applied" translatable="false">Applied</string>
+    <string name="inclusive_all_taxes">Inclusive of all taxes</string>
+    <string name="not_enroled_yet">You have not enrolled yet!</string>
+    <string name="enroled_yet">You have enrolled</string>
+    <string name="select_a_plan">Select a plan</string>
+
+    <string name="no_faq_found">No FAQ Found</string>
+    <string name="search_chapters">Search Chapters</string>
+
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="enter_a_message">Enter a message</string>
+    <string name="please_login">Please login</string>
+    <string name="no_more_data_found">No more data found</string>
+    <string name="you_are_not_enrolled">You are not enrolled</string>
+    <string name="no_chapter_found">No chapter found</string>
+    <string name="downloading">Downloading...</string>
+    <string name="sharing">Sharing...</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="password_mismatched">Password mismatched</string>
+    <string name="select_a_language">Select a language</string>
+    <string name="select_a_class">Select a class</string>
+    <string name="please_select_an_option">Please select an option</string>
+    <string name="no_more_question_available">No more question available</string>
+    <string name="error_in_payment">Error in payment:</string>
+    <string name="enter_name">Enter name</string>
+    <string name="mobile_no_should_have_ten_digits">Mobile no should have 10 digits</string>
+    <string name="accept_terms_and_conditions">Accept terms and conditions</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="no_more_videos">No more videos</string>
+    <string name="plz_login_first">Please login first</string>
+    <string name="no_instruction_found">No instruction found</string>
+    <!--    <string name="note_resources">Notes/Resources</string>-->
+    <string name="note_resources">Notes</string>
+
+    <string name="invalid_otp">Invalid otp</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="write_your_query">Write your query</string>
+    <string name="enter_opt">Enter OTP</string>
+    <string name="enter_valid_opt">Enter valid OTP</string>
+    <string name="kindly_first_register_or_login">Kindly first register or login</string>
+    <string name="something_went_wrong_p">Something went wrong</string>
+    <string name="active_plan">Active</string>
+    <string name="user_already_exist">User already exist</string>
+
+    <string name="choose_action">Choose Action</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <string name="no_new_updates_here">No New Updates Here!</string>
+    <string name="releasing_in_first_week_of_january">Releasing in First Week of February!</string>
+    <string name="coming_soon">Coming Soon!</string>
+    <string name="rest_coming_soon">\"Rest Coming Soon!\"</string>
+    <string name="coming_soon_sen">\"Coming Soon!\"</string>
+    <string name="new_here_get_started">New Here? Get Started</string>
+    <string name="already_have_an_account_with_us">Already have an account with us?</string>
+    <string name="log_in_here"><b>Log in here</b></string>
+    <string name="chapter_wise">Chapter-wise</string>
+    <string name="short_revision_videos">Short Revision Videos</string>
+    <string name="quickly_revise_concepts_through_short_videos">Quickly Revise Concepts Through Short Videos</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="practice_amp_tests"><![CDATA[Practice & Tests]]></string>
+    <string name="easy_self_assessments_through_practice_amp_tests"><![CDATA[Easy Self Assessments Through Practice & Tests]]></string>
+    <string name="quick">Quick</string>
+    <string name="revision_notes">Revision Notes</string>
+    <string name="download_notes_amp_revise_anytime_anywhere"><![CDATA[Download Notes & Revise Anytime Anywhere]]></string>
+    <string name="solved">Solved</string>
+    <string name="solved_intro">Solved</string>
+    <string name="question_bank">Question Bank</string>
+    <string name="all_subjects_question_bank_released_by_m_p_board">All Subjects Question Bank Released by DPI Bhopal</string>
+
+    <string name="name_length_validation">\"name\" length must be at least 3 characters long</string>
+    <string name="preview">Preview</string>
+    <string name="payment_cancelled">Payment cancelled</string>
+    <string name="question_bank_2023">Question Bank 2023</string>
+    <string name="question_bank_2023_intro">Question Bank 2023</string>
+
+    <string name="coupon_code">Coupon Code</string>
+    <string name="validity">Validity</string>
+    <string name="please_enrol">Please Enrol</string>
+    <string name="forcefully_update_mgs">New Version Of This App Is Available!</string>
+    <string name="update_btn">Update</string>
+    <string name="download_successful">Download Successful</string>
+    <string name="delete_dialog_msg">Are you sure you want to delete this file?</string>
+    <string name="delete_dialog_yes">Yes</string>
+    <string name="preferred_language">Preferred Language</string>
+    <string name="con_test">Continue</string>
+    <string name="version_name">Version</string>
+    <string name="coming_soon_thd">Coming Soon !</string>
+    <string name="str_description">Description</string>
+    <string name="str_please_select_state">Please select state</string>
+    <string name="select_state">select state</string>
+    <string name="str_delete_account">Delete Account</string>
+    <string name="str_delete_account_confirmation">Are you sure you want to delete the account?</string>
+    <string name="str_account_deleted">Account Deleted</string>
+
+    <!--    <string name="no_faq_found">No FAQ Found</string>-->
+    <!--    <string name="search_chapters">Search Chapters</string>-->
+    <!--    <string name="enter_mobile_no">Enter Mobile No</string>-->
+    <!--    <string name="enter_password">Enter password</string>-->
+
+</resources>

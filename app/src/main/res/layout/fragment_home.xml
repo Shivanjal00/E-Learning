@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_55"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="@string/subjects"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_home_list" />
+
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/tvTitleQuestionBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:text="@string/question_bank_2023"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvQueBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_home_list" />
+
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:text="@string/new_updates"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dp_15"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="@dimen/dp_90">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/llLatestUpdates"
+                            android:layout_width="@dimen/dp_170"
+                            android:layout_height="@dimen/dp_185"
+                            android:background="@drawable/bg_latest_update"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dp_110"
+                                android:layout_height="@dimen/dp_110"
+                                android:background="@drawable/bg_circle_shadowed_white"
+                                android:padding="@dimen/dp_25"
+                                android:src="@drawable/img_latest_updates" />
+
+                            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:text="@string/latest_updates"
+                                android:textColor="@color/black_100"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/llPreviousYearPaper"
+                            android:layout_width="@dimen/dp_170"
+                            android:layout_height="@dimen/dp_185"
+                            android:background="@drawable/bg_previous_year_papers"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dp_110"
+                                android:layout_height="@dimen/dp_110"
+                                android:background="@drawable/bg_circle_shadowed_white"
+                                android:padding="@dimen/dp_28"
+                                android:src="@drawable/img_previous_paper" />
+
+<!--                            previous_year_paper-->
+                            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                                android:id="@+id/tvNextPaper"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="@dimen/dp_132"
+                                android:singleLine="true"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:text="@string/previous_year_paper"
+                                android:textColor="@color/black_100"
+                                android:textSize="@dimen/sp_14"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:visibility="visible"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="@dimen/dp_132"
+                                android:visibility="gone">
+                                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxWidth="@dimen/dp_132"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:scrollbars="horizontal"
+                                    android:layout_marginBottom="@dimen/dp_10"
+                                    android:text="@string/previous_year_paper"
+                                    android:textColor="@color/black_100"
+                                    android:textSize="@dimen/sp_14" />
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/llModelPapers"
+                            android:layout_width="@dimen/dp_170"
+                            android:layout_height="@dimen/dp_185"
+                            android:background="@drawable/bg_tile_model"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dp_110"
+                                android:layout_height="@dimen/dp_110"
+                                android:background="@drawable/bg_circle_shadowed_white"
+                                android:padding="@dimen/dp_28"
+                                android:src="@drawable/img_model_paper" />
+
+                            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:text="@string/model_papers"
+                                android:textColor="@color/black_100"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_home_1"
+            android:paddingHorizontal="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_25">
+
+            <RelativeLayout
+                android:id="@+id/rlDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDrawerBtn"
+                    android:layout_width="@dimen/dp_28"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_hamburger" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_toRightOf="@id/imgDrawerBtn"
+                    android:src="@drawable/logo_resize" />
+
+                <!--<com.app.elearning.ui.customview.TextViewPoppinsMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_11"
+                    android:layout_toRightOf="@id/imgDrawerBtn"
+                    android:text="E-Learning"
+                    android:textColor="@color/black_100"
+                    android:textSize="@dimen/sp_20" />-->
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_search_magnifier"
+                android:padding="@dimen/dp_15"
+                android:src="@drawable/ic_magnifier" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:id="@+id/txtProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlDrawer"
+                android:layout_marginTop="@dimen/dp_18"
+                android:text="Hi, John"
+                android:textColor="@color/gray_40"
+                android:textSize="@dimen/sp_18" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtProfileName"
+                android:layout_alignBottom="@id/txtProfileName"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/txtProfileName"
+                android:src="@drawable/ic_welcome"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

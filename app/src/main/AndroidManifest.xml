@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- package="com.app.tensquare"> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".HiltApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.app.elearning"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".customUiExample.CustomUiActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.Splash_trailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.questionbankpaper.QuestionBankPaperActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".ui.pdf.PdfViewerActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation|locale"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.SearchActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.forgotpassword.ForgotPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.payment.WalletOptionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.payment.PaymentMethodActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.password.PasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.subscription.EnrolmentPlanPricingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.subscription.EnrolmentPlanPricingNewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.subscription.SelectedPlanPricingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LogoutActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeleteAccountActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.notification.NotificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.subscription.EnrolmentPlanActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelfAnalysisDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.analysis.AnalysisListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyDownloadsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.EditProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.MyProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.transaction.TransactionsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FaqsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.appdetail.AboutAndTermsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.paper.ModelPaperInSubjectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.paper.PreviousPaperInSubjectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.latestupdate.LatestUpdatesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.notes.NotesInSubjectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RevisionVideoInSubjectActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.session.PracticeSessionInSubjectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.questionbank.PracticeQuestionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.instruction.InstructionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chapter.ChaptersInSubjectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.revisionvideo.RevisionVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activity.SubjectDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="elearningdynamic.page.link"
+                    android:scheme="http" />
+                <data
+                    android:host="elearningdynamic.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.ThankYouActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.otp.OtpVerificationActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IntroSliderActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.initialsetup.SelectLanguageActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.initialsetup.SelectClassActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.initialsetup.SelectUserActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.SignUpActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--
+<activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.app.tensquare.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_notification_11" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".utils.MessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </service> <!-- razorpay -->
+        <!-- <meta-data -->
+        <!-- android:name="com.razorpay.ApiKey" -->
+        <!-- android:value="@string/" /> -->
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

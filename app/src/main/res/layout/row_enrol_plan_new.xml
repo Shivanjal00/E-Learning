@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--    android:background="@drawable/bg_selected_plan"-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardElevation="@dimen/dp_8"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginVertical="@dimen/dp_10">
+
+
+<!--        android:background="@drawable/plan_green_bg"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rlCard">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSetBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/plan_unselected_bg"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+<!--                    android:text="10th Class"-->
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtClassName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_32"
+                        android:textAlignment="center"
+                        android:layout_marginHorizontal="@dimen/dp_50"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_12"/>
+
+<!--                    android:text="Maths - गणित"-->
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtSubjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_20"
+                        android:layout_marginHorizontal="@dimen/dp_10"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_2"/>
+
+<!--                    android:text="Launch Offer"-->
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtOfferDec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_14"
+                        android:layout_gravity="end"
+                        android:text="Launch Offer"
+                        android:layout_marginEnd="@dimen/dp_13"
+                        android:layout_marginTop="@dimen/dp_12"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#FEC349"
+                        android:layout_marginHorizontal="@dimen/dp_4"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:paddingVertical="@dimen/dp_5"
+                        android:gravity="center_vertical">
+
+                        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="Subscription"
+                            android:textColor="#282828"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="1dp"/>
+
+
+<!--                        <com.app.tensquare.ui.customview.OutlineTextView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="0.9"-->
+<!--                            android:text="Subscription"-->
+<!--                            android:fontFamily="@font/poppin_medium"-->
+<!--                            android:textColor="#282828"-->
+<!--                            android:textSize="@dimen/sp_16"-->
+<!--                            app:outlineColor="@color/white"-->
+<!--                            app:outlineWidth="0.4"-->
+<!--                            android:layout_marginStart="@dimen/dp_10"-->
+<!--                            android:layout_marginTop="1dp"/>-->
+
+
+                        <!--                <com.app.tensquare.ui.customview.TextViewPoppinsRegular-->
+                        <!--                    android:layout_width="0dp"-->
+                        <!--                    android:layout_weight="0.9"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:text="Subscription"-->
+                        <!--                    android:textColor="#282828"-->
+                        <!--                    android:textSize="@dimen/sp_16"-->
+                        <!--                    android:layout_marginStart="@dimen/dp_10"/>-->
+
+<!--                        android:text="₹ 999 /-"-->
+                        <TextView
+                            android:id="@+id/txtActualPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#0B694D"
+                            android:textSize="@dimen/sp_16"
+                            android:layout_marginHorizontal="@dimen/dp_5"/>
+
+
+<!--                        android:text="₹ 499 /-"-->
+<!--                        <com.app.tensquare.ui.customview.OutlineTextView-->
+<!--                            android:id="@+id/txtOfferPrice"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="#087862"-->
+<!--                            android:textSize="@dimen/sp_24"-->
+<!--                            android:text="₹ 499 /-"-->
+<!--                            android:fontFamily="@font/plus_jakarta_sans_medium"-->
+<!--                            android:layout_marginStart="@dimen/dp_5"-->
+<!--                            android:layout_marginEnd="@dimen/dp_8"-->
+<!--                            app:outlineWidth="0.4"-->
+<!--                            app:outlineColor="@color/white"/>-->
+
+
+<!--                        android:text="₹ 499 /-"-->
+                        <TextView
+                            android:id="@+id/txtOfferPriceSen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#087862"
+                            android:textSize="@dimen/sp_24"
+                            android:fontFamily="@font/plus_jakarta_sans_medium"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_8"
+                            android:layout_marginBottom="@dimen/dp_1_5"/>
+
+                        <!--                <com.app.tensquare.ui.customview.TextViewPoppinsMedium-->
+                        <!--                    android:id="@+id/txtOfferPrice"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:text="₹ 499 /-"-->
+                        <!--                    android:textColor="#087862"-->
+                        <!--                    android:textSize="@dimen/sp_24"-->
+                        <!--                    android:layout_marginStart="@dimen/dp_5"-->
+                        <!--                    android:layout_marginEnd="@dimen/dp_10"/>-->
+
+
+                    </LinearLayout>
+
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valid Till"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginHorizontal="@dimen/dp_20"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_20"/>
+
+<!--                    android:text="30th April 2023"-->
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/tvExDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"
+                        android:layout_marginHorizontal="@dimen/dp_20"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:layout_marginBottom="@dimen/dp_10"/>
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/tvActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:visibility="visible">
+
+<!--                    android:src="@drawable/cross_line_12"-->
+                    <ImageView
+                        android:layout_width="@dimen/dp_75"
+                        android:layout_height="@dimen/dp_80"
+                        android:src="@drawable/active_11"
+                        android:scaleType="fitXY"/>
+<!--                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Active"-->
+<!--                        android:textColor="#147D6E"-->
+<!--                        android:textSize="@dimen/sp_14"-->
+<!--                        android:rotation="-47"-->
+<!--                        android:textAllCaps="true"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:layout_marginStart="6.5dp"-->
+<!--                        android:layout_marginTop="@dimen/dp_22"/>-->
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_15"
+        android:background="@drawable/bg_rect_solid_white_10"
+        android:orientation="vertical">
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_17"
+            android:text="@string/delete_dialog_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:paddingHorizontal="@dimen/dp_15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"/>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:id="@+id/tvCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_17"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:padding="@dimen/dp_10"
+                android:textSize="@dimen/sp_15" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:id="@+id/tvYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_17"
+                android:text="@string/delete_dialog_yes"
+                android:textAllCaps="true"
+                android:textColor="@color/loginclr"
+                android:textSize="@dimen/sp_15"
+                android:padding="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_30"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

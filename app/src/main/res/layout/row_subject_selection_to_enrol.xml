@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_84"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@drawable/bg_rect_black_stroke"
+    android:paddingHorizontal="@dimen/dp_22">
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+        android:id="@+id/txtSubjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Maths"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_checkbox_on"
+        android:visibility="gone" />
+
+</RelativeLayout>

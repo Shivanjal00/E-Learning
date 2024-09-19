@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/bg_rect_black_stroke_new" />
+    <item
+        android:width="@dimen/dp_39"
+        android:height="@dimen/dp_38"
+        android:drawable="@drawable/intersect_new_2"
+        android:top="@dimen/dp_3"
+        android:start="@dimen/dp_3"
+        android:end="@dimen/dp_2"
+        android:bottom="@dimen/dp_2" />
+<!--    android:drawable="@drawable/ic_bg_diagonal_corner_left_new"-->
+
+    <item
+        android:width="@dimen/dp_16"
+        android:height="@dimen/dp_16"
+        android:drawable="@drawable/ic_tick_2"
+        android:left="@dimen/dp_6"
+        android:top="@dimen/dp_3" />
+<!--    android:drawable="@drawable/ic_tick_2"-->
+</layer-list>

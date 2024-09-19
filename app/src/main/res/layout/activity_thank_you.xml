@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_thankyou" />
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_35"
+        android:gravity="center"
+        android:text="@string/thank_for_registration"
+        android:textColor="@color/black_30"
+        android:textSize="@dimen/sp_18" />
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtContinue"
+        android:layout_width="@dimen/dp_170"
+        android:layout_height="@dimen/dp_52"
+        android:layout_marginHorizontal="@dimen/dp_25"
+        android:layout_marginVertical="@dimen/dp_30"
+        android:background="@drawable/bg_btn_light_black"
+        android:gravity="center"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCard"
+    android:layout_width="@dimen/dp_170"
+    android:layout_height="@dimen/dp_185">
+
+    <LinearLayout
+        android:id="@+id/imgBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_maths"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgImage"
+            android:layout_width="@dimen/dp_110"
+            android:layout_height="@dimen/dp_110"
+            android:background="@drawable/bg_circle_shadowed_white"
+            android:padding="@dimen/dp_20"
+            android:src="@drawable/img_maths" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="Maths"
+            android:textColor="@color/black_100"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

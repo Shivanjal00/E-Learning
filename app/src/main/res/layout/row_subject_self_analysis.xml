@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_7">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgImage"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_circle_shadowed_white"
+        android:padding="@dimen/dp_20"
+        android:src="@drawable/img_physics" />
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="Maths"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:id="@+id/viewSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_4"
+        android:layout_below="@id/txtName"
+        android:layout_alignLeft="@id/txtName"
+        android:layout_alignRight="@id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@drawable/view_line_below_subject" />
+
+</RelativeLayout>

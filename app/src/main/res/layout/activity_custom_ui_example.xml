@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/header_common"
+        android:elevation="@dimen/dp_5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_btn_back" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_toRightOf="@+id/imgBack"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enableAutomaticInitialization="false"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout" />
+
+    <RelativeLayout
+        android:id="@+id/rlFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:paddingHorizontal="@dimen/dp_18"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_player_view">
+
+        <CheckBox
+            android:id="@+id/chkLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/like_switcher"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chkLike"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_share" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/chkLike"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Subtitle :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/switch_selector"
+                android:focusable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:padding="@dimen/dp_7"
+                android:src="@drawable/ic_plus_black" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/feedback"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlFeedback">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_25"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:text="@string/str_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:id="@+id/txtSummery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:maxLines="7"
+                android:minLines="7"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/black_35"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintBottom_toTopOf="@+id/txtNextVideo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                android:id="@+id/txtNextVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:text="@string/other_chapters"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/rvNextChapters" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNextChapters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:listitem="@layout/row_next_chapter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

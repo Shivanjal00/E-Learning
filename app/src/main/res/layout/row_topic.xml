@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.tensquare.ui.customview.TextViewPoppinsLight xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtName"
+    android:layout_alignLeft="@id/txtName"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_20"
+    android:text="Lorem Ipsum is simply dummy text "
+    android:textColor="@color/black_23"
+    android:textSize="@dimen/sp_18" />

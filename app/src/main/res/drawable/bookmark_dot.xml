@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:width="47dp"
+        android:height="47dp"
+        android:bottom="@dimen/dp_3"
+        android:drawable="@drawable/bg_circle_gradient_gray"
+        android:left="@dimen/dp_3"
+        android:right="@dimen/dp_3"
+        android:top="@dimen/dp_3"></item>-->
+
+    <item
+        android:width="@dimen/dp_6"
+        android:height="@dimen/dp_6"
+        android:drawable="@drawable/ic_dot_black"
+        android:gravity="center_horizontal"></item>
+</layer-list>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2IntroSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_130"/>
+
+
+<!--    android:background="@drawable/bg_rect_4"-->
+    <com.app.tensquare.ui.customview.TextViewPlusJakartaSansMedium
+        android:id="@+id/tv_skip"
+        android:layout_width="78dp"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/next_uderline"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:visibility="visible"/>
+
+    <com.app.tensquare.utils.IndicatorLayout
+        android:id="@+id/indicatorLayout_into"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:indicatorCount="3"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="Skip"
+        android:textAllCaps="true"
+        android:textColor="#055644"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+<!--    android:layout_marginBottom="@dimen/dp_30"-->
+    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="@dimen/dp_25"
+        android:layout_above="@id/txtLogin"
+        android:background="@drawable/rounded_background_green"
+        android:backgroundTint="#065348"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/new_here_get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15" />
+
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/log_in_here"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:textAlignment="center"
+            android:paddingHorizontal="@dimen/dp_14"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginBottom="@dimen/dp_18"/>
+
+
+
+</RelativeLayout>

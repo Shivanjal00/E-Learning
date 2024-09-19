@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dp_15"
+    tools:context=".ui.revisionvideo.RevisionVideoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/ic_btn_back" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/bg_feedback"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgScreen"
+            android:layout_width="@dimen/dp_110"
+            android:layout_height="@dimen/dp_110"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/bg_circle_shadowed_white"
+            android:padding="@dimen/dp_25"
+            android:src="@drawable/img_feedback" />
+
+    </LinearLayout>
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_80"
+        android:text="Write feedback"
+        android:textColor="@color/black_25"
+        android:textSize="@dimen/sp_14"
+        android:visibility="invisible" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        android:layout_marginTop="@dimen/dp_5"
+        android:fontFamily="@font/poppins_light"
+        android:background="@drawable/rect_edittext_multiline"
+        android:gravity="top"
+        android:hint="@string/write_something"
+        android:paddingHorizontal="@dimen/dp_25"
+        android:paddingVertical="@dimen/dp_15"
+        android:textColor="@color/black_25"
+        android:textColorHint="@color/black_25"
+        android:textSize="@dimen/sp_16" />
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_marginHorizontal="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/rounded_background_green"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+    </LinearLayout>
+</ScrollView>

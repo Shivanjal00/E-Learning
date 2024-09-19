@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@drawable/bg_selected_plan"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_14">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_books" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_5"
+            android:text="@string/class_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:paddingHorizontal="@dimen/dp_22">
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtSubjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subjects"
+            android:textColor="@color/black_35"
+            android:textSize="@dimen/sp_16" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtActualPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="₹ 999 /-"
+            android:textColor="@color/gray_185"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_14">
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launch_offer"
+            android:textColor="@color/black_35"
+            android:textSize="@dimen/sp_16" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtOfferPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="₹ 499 /-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+        android:id="@+id/tvActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/active_plan"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="@dimen/dp_3"
+        android:background="@drawable/active_bg"
+        android:visibility="gone"/>
+
+    <!--<androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_checkbox_on"
+        android:visibility="gone" />-->
+
+</LinearLayout>

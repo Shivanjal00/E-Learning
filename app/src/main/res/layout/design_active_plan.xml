@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llDetailCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/bg_rect_black_stroke"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/ic_bg_diagonal_corner_left"
+                android:paddingLeft="-18dp"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_20"
+                android:src="@drawable/ic_tick_2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:src="@drawable/ic_running_class_gray_2x" />
+
+        </RelativeLayout>
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+            android:id="@+id/txtActiveClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Active: 10th/12th Grade"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+            android:id="@+id/txtSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+            android:id="@+id/txtValidTill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="Valid Till : 20-8-2022"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar"
+        android:layout_marginTop="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_35">
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:id="@+id/imgProfile"-->
+<!--                    android:layout_width="@dimen/dp_105"-->
+<!--                    android:layout_height="@dimen/dp_105"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginBottom="@dimen/dp_33"-->
+<!--                    android:src="@drawable/profile_place_holder"-->
+<!--                    app:shapeAppearance="@style/roundedImageViewRounded" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/dp_105"
+                    android:layout_height="@dimen/dp_105"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_33"
+                    android:src="@drawable/profile_place_holder"/>
+
+
+                <ImageView
+                    android:id="@+id/imgChangeProfile"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignBottom="@id/imgProfile"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="-25dp"
+                    android:layout_toRightOf="@id/imgProfile"
+                    android:background="@drawable/bg_camera_black"
+                    android:padding="@dimen/dp_10"
+                    android:src="@drawable/ic_camera" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_20">
+
+                <com.app.tensquare.ui.customview.EditTextPoppinsRegular
+                    android:id="@+id/edtName"
+                    style="@style/edit_text_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+
+                <com.app.tensquare.ui.customview.EditTextPoppinsRegular
+                    android:id="@+id/edtMobile"
+                    style="@style/edit_text_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="@string/mobile_number"
+                    android:inputType="textPersonName" />
+
+
+                <!--
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_20"
+                                    android:background="@drawable/bg_edittext"
+                                    android:orientation="horizontal">
+
+                                    <com.app.elearning.ui.customview.EditTextPoppinsRegular
+                                        style="@style/edit_text_style_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:maxLength="3"
+                                        android:paddingLeft="@dimen/dp_23"
+                                        android:paddingRight="@dimen/dp_14"
+                                        android:text="+91" />
+
+                                    <View
+                                        android:layout_width="@dimen/dp_1"
+                                        android:layout_height="@dimen/dp_31"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@color/gray_20" />
+
+                                    <com.app.elearning.ui.customview.EditTextPoppinsRegular
+                                        android:id="@+id/edtMobile"
+                                        style="@style/edit_text_style_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:hint="Mobile number"
+                                        android:maxLength="10"
+                                        android:paddingLeft="@dimen/dp_11"
+                                        android:paddingRight="@dimen/dp_23" />
+
+                                </LinearLayout>
+                -->
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_7"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:text="@string/language"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <RelativeLayout
+                    android:id="@+id/flLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_edittext">
+
+                    <Spinner
+                        android:id="@+id/spnLang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible" />
+                    <!--android:spinnerMode="dialog"-->
+                    <!--tools:listitem="@layout/general_spinner_item"-->
+
+                    <!--<com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/menu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="@dimen/dp_0"
+                        app:boxBackgroundColor="@null"
+                        app:boxBackgroundMode="outline"
+                        app:endIconTint=""
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        android:hint="Language">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtLanguage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:layout_marginRight="@dimen/dp_45"
+                        android:hint="@string/language"
+                        android:textColor="@color/black_150"
+                        android:textColorHint="@color/black_150"
+                        android:textSize="@dimen/sp_14" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_23"
+                        android:src="@drawable/ic_arrow_down" />
+                </RelativeLayout>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_7"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:text="@string/class_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <RelativeLayout
+                    android:id="@+id/flClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_edittext">
+
+                    <Spinner
+                        android:id="@+id/spnClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:layout_marginRight="@dimen/dp_45"
+                        android:hint="12th"
+                        android:textColor="@color/black_150"
+                        android:textColorHint="@color/black_150"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_23"
+                        android:src="@drawable/ic_arrow_down" />
+
+                </RelativeLayout>
+
+                <com.app.tensquare.ui.customview.EditTextPoppinsRegular
+                    android:id="@+id/edtEmail"
+                    style="@style/edit_text_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:hint="@string/email_optional"
+                    android:inputType="textEmailAddress" />
+
+                <com.app.tensquare.ui.customview.EditTextPoppinsRegular
+                    android:id="@+id/edtSchoolName"
+                    style="@style/edit_text_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:hint="@string/school_optional"
+                    android:inputType="text" />
+
+                <RelativeLayout
+                    android:id="@+id/flState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/bg_edittext">
+
+                    <Spinner
+                        android:id="@+id/spnState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_23"
+                        android:layout_marginRight="@dimen/dp_45"
+                        android:hint="@string/state_optional"
+                        android:textColor="@color/black_150"
+                        android:textColorHint="@color/black_150"
+                        android:textSize="@dimen/sp_14" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_23"
+                        android:src="@drawable/ic_arrow_down" />
+
+                </RelativeLayout>
+
+                <com.app.tensquare.ui.customview.EditTextPoppinsRegular
+                    android:id="@+id/edtDistrict"
+                    style="@style/edit_text_style"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:hint="@string/district_optional"
+                    android:inputType="textPersonName" />
+
+                <!--<FrameLayout
+                    android:id="@+id/flDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/dp_23">
+
+                    <com.app.elearning.ui.customview.EditTextPoppinsRegular
+                        android:id="@+id/edtDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="District (Optional)"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black_150"
+                        android:textColorHint="@color/black_150"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_16"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_arrow_down" />
+                </FrameLayout>-->
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                    android:id="@+id/txtSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_55"
+                    android:layout_marginHorizontal="@dimen/dp_28"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:background="@drawable/rounded_background_green"
+                    android:gravity="center"
+                    android:text="@string/save_changes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/header_common"
+        android:paddingHorizontal="@dimen/dp_20">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_13"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_btn_back" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgBack"
+            android:layout_alignBottom="@id/imgBack"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

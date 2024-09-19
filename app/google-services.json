@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "713924813704",
+    "project_id": "e-learning-7822a",
+    "storage_bucket": "e-learning-7822a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713924813704:android:101304a9dc05b9f808d03d",
+        "android_client_info": {
+          "package_name": "com.app.elearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713924813704-j4cb4aivap8uhoodbm2rkanhhteskktn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.elearning",
+            "certificate_hash": "34b75d59256893060f0c0aa24604674f95b10649"
+          }
+        },
+        {
+          "client_id": "713924813704-pomt33pit3km2me0sr417aeslscdmteq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.elearning",
+            "certificate_hash": "ece2ce4b4caec9bbb7ab9091003bfb1ce2b629a1"
+          }
+        },
+        {
+          "client_id": "713924813704-le4ioctuko80uk9cknjsgipu3f1dmu84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz-SZfM8_bj9J5F8njpP1jSIrcRC5uuTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713924813704-le4ioctuko80uk9cknjsgipu3f1dmu84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713924813704:android:afe2e6fa9071221f08d03d",
+        "android_client_info": {
+          "package_name": "com.app.tensquare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713924813704-45uro8o9gi9oilhr6opgvl6lf894n02a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tensquare",
+            "certificate_hash": "ece2ce4b4caec9bbb7ab9091003bfb1ce2b629a1"
+          }
+        },
+        {
+          "client_id": "713924813704-kuaoq2dnlee6u30mpv52pfn8127l9b14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tensquare",
+            "certificate_hash": "34b75d59256893060f0c0aa24604674f95b10649"
+          }
+        },
+        {
+          "client_id": "713924813704-le4ioctuko80uk9cknjsgipu3f1dmu84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz-SZfM8_bj9J5F8njpP1jSIrcRC5uuTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713924813704-le4ioctuko80uk9cknjsgipu3f1dmu84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

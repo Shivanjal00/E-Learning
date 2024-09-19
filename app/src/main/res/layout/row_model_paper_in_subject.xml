@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/dp_20">
+
+    <LinearLayout
+        android:id="@+id/llAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20">
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/imgDownload"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:background="@drawable/ic_bg_btn_gray"-->
+<!--            android:padding="@dimen/dp_10"-->
+<!--            android:src="@drawable/ic_download" />-->
+
+<!--        <com.app.tensquare.ui.customview.TextViewPoppinsMedium-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="@dimen/dp_3"-->
+<!--            android:text="@string/download"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_10" />-->
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/clForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_rect_gray_stroke_solid"
+        android:paddingHorizontal="@dimen/dp_25">
+
+        <LinearLayout
+            android:id="@+id/sublout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Paper 1"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"/>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:text="Solution 1"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgShare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg_btn_gray"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_share"/>
+
+<!--            android:padding="@dimen/dp_10"-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLock"
+                android:layout_width="15dp"
+                android:layout_height="17dp"
+                android:src="@drawable/lock_12"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sublout"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPdf"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_36"
+                android:src="@drawable/ic_pdf" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_toLeftOf="@id/imgDelete"
+                android:layout_toRightOf="@id/imgPdf"
+                android:orientation="vertical">
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                    android:id="@+id/txtPdfTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Lorem ipsum title"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <!--<com.app.elearning.ui.customview.TextViewPoppinsRegular
+                    android:id="@+id/txtDownloadTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:maxLines="1"
+                    android:text="Downloaded at 15-5-22"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_10" />-->
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgDownload"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg_btn_gray"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_download"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

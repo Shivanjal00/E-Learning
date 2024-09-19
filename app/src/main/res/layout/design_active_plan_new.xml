@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_31"
+        android:backgroundTint="@android:color/transparent"
+        android:elevation="@dimen/dp_5"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_5">
+
+        <LinearLayout
+            android:id="@+id/llDetailCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_190"
+            android:background="@drawable/selected_plan_green_bg_2"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:id="@+id/txtActiveClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10th Class"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_32"
+                android:singleLine="true"
+                android:layout_marginHorizontal="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_12"/>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:id="@+id/txtSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maths - गणित"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_2"/>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid Till"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_18"/>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:id="@+id/txtValidTill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30th April 2023"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_marginBottom="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

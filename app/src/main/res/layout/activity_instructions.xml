@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.instruction.InstructionsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/ic_btn_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSubjectTile"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_200"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_shadow_gradient_sky"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtSubjectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maths"
+                    android:textColor="@color/black_100"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgSubject"
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="@dimen/dp_110"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_circle_shadowed_white"
+                    android:padding="@dimen/dp_20"
+                    android:src="@drawable/img_physics" />
+
+            </LinearLayout>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:id="@+id/txtSubjectModuleName"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/bg_shadow_grey_700"
+                android:gravity="center"
+                android:text="@string/practice_session"
+                android:textColor="@color/black_40"
+                android:textSize="@dimen/sp_15" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:text="Lorem ipsum doloramet, consectetur adipiscing elit."
+                android:textColor="@color/black_40"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp_45"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:text="@string/instructions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:id="@+id/txtNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/no_instruction_found" />
+
+            <LinearLayout
+                android:id="@+id/llIns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:src="@drawable/ic_dot_black" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtIns1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:src="@drawable/ic_dot_black" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtIns2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIns3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:src="@drawable/ic_dot_black" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtIns3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIns4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:src="@drawable/ic_dot_black" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtIns4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIns5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_18"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:src="@drawable/ic_dot_black" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsLight
+                    android:id="@+id/txtIns5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+                    android:textColor="@color/black_35"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+<!--    android:layout_marginTop="-10dp"-->
+
+
+
+<!--    android:layout_marginTop="@dimen/dp_40"-->
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/rounded_background_green"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginBottom="@dimen/dp_20"/>
+
+
+</LinearLayout>

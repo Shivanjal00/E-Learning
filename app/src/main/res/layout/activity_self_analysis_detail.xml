@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SubjectDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlToolbar"
+        android:layout_marginTop="-20dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_progress">
+
+                <View
+                    android:layout_width="@dimen/dp_190"
+                    android:layout_height="@dimen/dp_190"
+                    android:layout_margin="@dimen/dp_55"
+                    android:background="@drawable/bg_circle_progress_1" />
+
+                <ProgressBar
+                    android:id="@+id/progressScore"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="206dp"
+                    android:layout_height="206dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtAvgScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/brown_50"
+                        android:textSize="@dimen/sp_40" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/avg_score_n"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:text="Test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llPracticeSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/llTest"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_test_attempted" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtTotalTests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="@string/total_test_attempted_n"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/llPracticeSession"
+                    app:layout_constraintRight_toLeftOf="@+id/llAvgTimePerQues"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clock_black" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/timeSpendOnTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="0 Min"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="@string/time_spend_on_tests_n"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAvgTimePerQues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintLeft_toRightOf="@+id/llTest"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clock_black" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtAvgTimePerQues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="0 Min"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="@string/avg_time_per_question_n"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_60"
+                android:text="Practice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llPracticeTimeing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/llXYZ"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clock_black" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtTimeSpendOnPractice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="0 Min"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="@string/time_spend_on_practice_n"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llXYZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/llPracticeTimeing"
+                    app:layout_constraintRight_toLeftOf="@+id/llUnknown"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clock_black" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="Xyz"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="Lorem\nIpsum"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llUnknown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintLeft_toRightOf="@+id/llXYZ"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clock_black" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:gravity="center_horizontal"
+                        android:text="20 Min"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="Average Time\nPer Question"
+                        android:textColor="@color/gray_190"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_60"
+                android:text="@string/topic_for_improvement"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/row_topic" />
+
+            <!--<com.app.elearning.ui.customview.TextViewPoppinsLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Are Parallel"
+                android:textColor="@color/black_23"
+                android:textSize="@dimen/sp_18" />
+
+            <com.app.elearning.ui.customview.TextViewPoppinsLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Perpendicular"
+                android:textColor="@color/black_23"
+                android:textSize="@dimen/sp_18" />
+
+            <com.app.elearning.ui.customview.TextViewPoppinsLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Intersect At Two Points"
+                android:textColor="@color/black_23"
+                android:textSize="@dimen/sp_18" />-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/header_common"
+        android:elevation="@dimen/dp_5">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_btn_back" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/self_analysis"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

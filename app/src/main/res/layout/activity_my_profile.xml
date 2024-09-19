@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar"
+        android:layout_marginTop="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_35">
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:id="@+id/imgProfile"-->
+<!--                    android:layout_width="@dimen/dp_105"-->
+<!--                    android:layout_height="@dimen/dp_105"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginBottom="@dimen/dp_33"-->
+<!--                    android:src="@drawable/profile_place_holder"-->
+<!--                    app:shapeAppearance="@style/roundedImageViewRounded" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/dp_105"
+                    android:layout_height="@dimen/dp_105"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_33"
+                    android:src="@drawable/profile_place_holder"/>
+
+
+                <!--<ProgressBar
+                    android:id="@+id/progProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_30" />-->
+
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_33"
+                    android:src="@drawable/ic_edit_pen" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_10">
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:text="@string/name"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+<!--                android:text="John"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/mobile"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="8076842234"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/language"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+<!--                android:text="English"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/class_name"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="12th"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/email"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="john@gmail.com"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/school"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="DPS School"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtSchoolName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/state"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="Delhi"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="@string/district"
+                    android:textColor="@color/gray_145"
+                    android:textSize="@dimen/sp_14"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+<!--                android:text="South Delhi"-->
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/gray_25"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                    android:id="@+id/txtEnrolmentPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:text="@string/enrolment_plan"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/sp_18"
+                    android:visibility="gone"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_25"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/llDetailCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:background="@drawable/bg_rect_black_stroke"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingHorizontal="@dimen/dp_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dp_45"
+                            android:layout_height="@dimen/dp_45"
+                            android:background="@drawable/ic_bg_diagonal_corner_left"
+                            android:paddingLeft="-18dp"
+                            android:paddingTop="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_20"
+                            android:src="@drawable/ic_tick_2" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dp_45"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:src="@drawable/ic_running_class_gray_2x" />
+
+                    </RelativeLayout>
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsMedium
+                        android:id="@+id/txtActiveClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="Active: 10th/12th Grade"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_20" />
+
+                    <com.app.tensquare.ui.customview.TextViewPoppinsRegular
+                        android:id="@+id/txtValidTill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:text="Valid Till : 20-8-2022"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+                <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+                    android:id="@+id/txtSubscribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_55"
+                    android:layout_marginHorizontal="@dimen/dp_25"
+                    android:layout_marginVertical="@dimen/dp_35"
+                    android:background="@drawable/rounded_background_green"
+                    android:gravity="center"
+                    android:text="@string/subscribe"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    android:visibility="gone"
+                    android:paddingHorizontal="@dimen/dp_10"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/header_common"
+        android:paddingHorizontal="@dimen/dp_20">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_13"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_btn_back" />
+
+        <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgBack"
+            android:layout_alignBottom="@id/imgBack"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/my_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

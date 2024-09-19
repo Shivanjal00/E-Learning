@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgBackgound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/question_selected" />
+
+    <ImageView
+        android:id="@+id/imgDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bookmark_dot" />
+
+    <com.app.tensquare.ui.customview.TextViewPoppinsSemiBold
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/dp_5"
+        android:text="1"
+        android:textColor="@color/gray_165"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorLayout">
+        <attr name="indicatorCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="YouTubePlayerSeekBar">
+        <attr name="fontSize" format="dimension" />
+        <attr name="color" format="color" />
+    </declare-styleable>
+</resources>
